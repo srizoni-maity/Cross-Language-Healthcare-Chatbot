@@ -1,4 +1,4 @@
-#🩺 Bhasha-Arogya: Cross-Language Health Bridge
+#  Bhasha-Arogya: Cross-Language Health Bridge 🩺
 Breaking language barriers in healthcare, one symptom at a time.
 
 https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
@@ -48,11 +48,11 @@ An OpenAI API key
 3. Backend Setup :
    cd backend
    pip install -r requirements.txt
-   # Set your API Key (Unix/macOS)
+   ### Set your API Key (Unix/macOS)
    export OPENAI_API_KEY="your_key_here"
-   # For Windows (Command Prompt)
+   #### For Windows (Command Prompt)
    setx OPENAI_API_KEY "your_key_here"
-   # Start the server
+   #### Start the server
     uvicorn app.main:app --reload --port 8000
 API docs will be live at: http://localhost:8000/docs
 
@@ -128,5 +128,6 @@ Srizoni Maity
 Baishakhi Sing
 GitHub: [https://github.com/srizoni-maity]
 LinkedIn: [https://www.linkedin.com/in/srizoni-maity-012235356]**
+
 
 If this project inspires you, give it a ⭐!
