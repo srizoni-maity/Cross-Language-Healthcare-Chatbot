@@ -1,22 +1,32 @@
 #🩺 Bhasha-Arogya: Cross-Language Health Bridge
 Breaking language barriers in healthcare, one symptom at a time.
+
 https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
+
 https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+
 https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white
+
 
 </div>
 🌟 The Problem & Our Solution
 Millions are left behind in healthcare due to language barriers. A patient describing symptoms in their native Bengali often gets lost in translation before reaching a doctor.
+
 Bhasha-Arogya (Language-Health) is an AI-powered prototype designed to be that crucial bridge. It captures nuanced, village-level Bengali symptom descriptions and translates them into structured clinical data for doctors, ensuring nothing gets lost.
 
 ⚠️ Critical Disclaimer: This is a prototype for demonstration and research purposes only. It is NOT a certified medical device and should NEVER be used as a substitute for professional diagnosis, advice, or treatment.
 
+
 🚀 Key Features
 Feature	Description	Impact :
 🧠 Intelligent Symptom Parsing	NLP-powered extraction of symptoms, severity, duration, and potential red flags from colloquial Bengali.	Turns unstructured patient language into actionable, structured data.
+
 🚨 Red Flag Detection	Automatically highlights urgent warning signs (e.g., "shosh hoye jacche" - severe dehydration) for immediate attention.	Prioritizes critical cases and alerts clinicians.
+
 💊 AI-Powered OTC Suggestions	Leverages OpenAI GPT to generate safe, general-purpose over-the-counter medicine advice. Clearly labels it as non-prescriptive.	Provides educational context for common, minor ailments.
+
 🔄 Doctor-Patient Translation	Converts complex English doctor instructions back into simple, understandable Bengali for the patient.	Closes the communication loop and improves health literacy.
+
 
 ## Tech Stack
 Backend API: Python + FastAPI (High-performance, async-ready)
