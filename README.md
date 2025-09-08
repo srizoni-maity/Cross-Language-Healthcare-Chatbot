@@ -1,4 +1,3 @@
-<div align="center">
 #🩺 Bhasha-Arogya: Cross-Language Health Bridge
 Breaking language barriers in healthcare, one symptom at a time.
 https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
@@ -120,7 +119,5 @@ Baishakhi Sing
 GitHub: [https://github.com/srizoni-maity]
 LinkedIn: [https://www.linkedin.com/in/srizoni-maity-012235356]**
 
-<div align="center">
-
 If this project inspires you, give it a ⭐!
-</div>
+
