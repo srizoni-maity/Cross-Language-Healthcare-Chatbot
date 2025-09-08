@@ -1,0 +1,20 @@
+README.md (file)
+backend
+sample_data
+frontend
+Dockerfile (file)
+docker-compose.yml (file)
+LICENSE (file)
+backend/requirements.txt (file)
+backend/app
+backend/demo_run.py (file)
+backend/app/main.py (file)
+backend/app/nlp.py (file)
+backend/app/translator.py (file)
+sample_data/sample_bengali.txt (file)
+sample_data/sample_interaction.json (file)
+frontend/package.json (file)
+frontend/public
+frontend/src
+frontend/public/index.html (file)
+frontend/src/App.jsx (file)

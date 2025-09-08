@@ -1,0 +1,24 @@
+{
+  "patient": "আমার ৩ দিন ধরে জ্বর ও কাশি আছে, মাঝে মাঝে শ্বাস নিতে কষ্ট হয়।",
+  "parsed": {
+    "symptoms": [
+      {
+        "name": "fever",
+        "source_word": "জ্বর"
+      },
+      {
+        "name": "cough",
+        "source_word": "কাশি"
+      },
+      {
+        "name": "shortness of breath",
+        "source_word": "শ্বাস নিতে কষ্ট"
+      }
+    ],
+    "duration": "3 days",
+    "severity": "moderate",
+    "red_flags": []
+  },
+  "doctor_reply_english": "Give paracetamol for fever, advise rest, if shortness of breath worsens seek emergency care.",
+  "doctor_reply_bengali_simple": "জ্বর হলে প্যারাসিটামল নিন, আরাম করুন; শ্বাসকষ্ট বাড়লে তৎক্ষণাৎ হাসপাতালে যান"
+}

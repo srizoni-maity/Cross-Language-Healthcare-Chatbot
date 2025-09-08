@@ -1,0 +1,59 @@
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+*.sqlite3
+*.db
+
+# ----------------------
+# Node / Frontend
+# ----------------------
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+
+# ----------------------
+# VSCode / IDEs
+# ----------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------
+# OS / Misc
+# ----------------------
+.DS_Store
+Thumbs.db
+*.log
+
+# ----------------------
+# Docker
+# ----------------------
+*.pid
+*.sock
+docker-compose.override.yml
+
+# ----------------------
+# Coverage / Test
+# ----------------------
+coverage/
+*.cover
+*.py,cover
+.nyc_output/
+coverage-final.json
+
+# ----------------------
+# Temporary / backup files
+# ----------------------
+*.bak
+*.tmp
+*.swp
