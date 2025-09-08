@@ -1,133 +1,368 @@
-#🩺 Bhasha-Arogya: Cross-Language Health Bridge
-Breaking language barriers in healthcare, one symptom at a time.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhasha-Arogya: Cross-Language Health Bridge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0066cc 0%, #0099ff 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+        
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .badge {
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: white;
+            display: inline-block;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        
+        h3 {
+            color: #0099ff;
+            margin: 20px 0 10px;
+        }
+        
+        .problem-solution {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .problem, .solution {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .problem {
+            background-color: #fff4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .solution {
+            background-color: #f4f9ff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .disclaimer {
+            background-color: #fff9e6;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #ffcc00;
+            margin: 20px 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #0066cc;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .tech-item {
+            background: #eef5ff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        .quick-start {
+            background: #f0f9f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Fira Code', monospace;
+        }
+        
+        .code-comment {
+            color: #9c9c9c;
+        }
+        
+        .user-journey {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .step {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background: #0066cc;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .file-structure {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            margin: 20px 0;
+        }
+        
+        .file-item {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+        
+        .folder {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .problem-solution {
+                flex-direction: column;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bhasha-Arogya</h1>
+        <div class="tagline">Cross-Language Health Bridge: Breaking language barriers in healthcare, one symptom at a time.</div>
+        <div class="badges">
+            <div class="badge" style="background-color: #005571;">FastAPI</div>
+            <div class="badge" style="background-color: #20232A;">React</div>
+            <div class="badge" style="background-color: #412991;">OpenAI</div>
+        </div>
+    </header>
 
-https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
+    <div class="section">
+        <h2>Project Overview</h2>
+        
+        <p><strong>Core idea:</strong> A global chatbot that translates symptoms described in local languages (example: Bengali) into structured medical terms in English for clinicians, and converts clinician replies back into simple local-language explanations for the patient.</p>
+        
+        <div class="disclaimer">
+            <strong>⚠️ Important Notice:</strong> This is a high-level, runnable prototype. It is <em>NOT</em> a medical device. Do not use in production without clinical validation and legal review.
+        </div>
+    </div>
 
-https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+    <div class="section">
+        <h2>What's Included</h2>
+        
+        <div class="file-structure">
+            <div class="file-item"><span class="folder">backend/</span> : FastAPI backend with endpoints</div>
+            <div class="file-item"><span class="folder">frontend/</span> : Minimal React app (single-file) to demo the flow</div>
+            <div class="file-item"><span class="folder">sample_data/</span> : Example Bengali symptom descriptions and sample interaction</div>
+            <div class="file-item">Dockerfile and docker-compose.yml : quick dev/devops scaffolding</div>
+            <div class="file-item">README.md : this file with usage and safety notes</div>
+        </div>
+        
+        <h3>Backend Endpoints</h3>
+        <ul>
+            <li><code>/parse</code> : parse Bengali free-text symptoms → structured JSON (rule-based prototype)</li>
+            <li><code>/doctor_reply</code> : accepts a doctor's English reply and produces a simple Bengali translation</li>
+            <li><code>/translate</code> : placeholder translator interface showing where an ML/translation API would be used</li>
+        </ul>
+    </div>
 
-https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white
+    <div class="section">
+        <h2>How to Run (Local Development)</h2>
+        
+        <div class="quick-start">
+            <h3>Option 1: Backend (Python)</h3>
+            <code>
+                cd backend<br>
+                python3 -m venv venv<br>
+                source venv/bin/activate<br>
+                pip install -r requirements.txt<br>
+                uvicorn app.main:app --reload --port 8000
+            </code>
+            
+            <h3>Option 2: Frontend</h3>
+            <code>
+                cd frontend<br>
+                npm install<br>
+                npm start
+            </code>
+            
+            <h3>Option 3: Docker Compose</h3>
+            <code>
+                docker-compose up --build
+            </code>
+        </div>
+    </div>
 
+    <div class="section">
+        <h2>Design Notes (High-Level)</h2>
+        
+        <div class="user-journey">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Input (Villager)</h3>
+                    <p>Free-text in Bengali describing symptoms.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>NLP/Transformation</h3>
+                    <p>Convert to structured JSON (symptoms, onset, duration, severity, red flags). Prototype uses rule-based extraction and a small bilingual lexicon.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Clinician View</h3>
+                    <p>Structured JSON + original text is shown to doctor. Doctor types a reply in medical English.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Backtranslation & Simplification</h3>
+                    <p>Reply is simplified and translated into Bengali in simple words for the patient.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Extensibility</h3>
+                    <p>Replace translation modules with cloud translation APIs (e.g. Google Translate) or fine-tuned LLM for clinical mapping; replace rule-based parser with an entity extraction model.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
-🌟 The Problem & Our Solution
-Millions are left behind in healthcare due to language barriers. A patient describing symptoms in their native Bengali often gets lost in translation before reaching a doctor.
+    <div class="section">
+        <h2>Safety, Ethics & Legal Considerations</h2>
+        
+        <div class="disclaimer">
+            <ul>
+                <li>This is a prototype. Medical correctness is not guaranteed.</li>
+                <li>Always surface a "seek immediate care" warning for red flags (danger signs).</li>
+                <li>Log and audit translations / clinician confirmations in production.</li>
+                <li>Add HIPAA/GDPR compliance, secure transport (HTTPS), auth, consent before deployment.</li>
+            </ul>
+        </div>
+    </div>
 
-Bhasha-Arogya (Language-Health) is an AI-powered prototype designed to be that crucial bridge. It captures nuanced, village-level Bengali symptom descriptions and translates them into structured clinical data for doctors, ensuring nothing gets lost.
-
-⚠️ Critical Disclaimer: This is a prototype for demonstration and research purposes only. It is NOT a certified medical device and should NEVER be used as a substitute for professional diagnosis, advice, or treatment.
-
-
-🚀 Key Features
-Feature	Description	Impact :
-🧠 Intelligent Symptom Parsing	NLP-powered extraction of symptoms, severity, duration, and potential red flags from colloquial Bengali.	Turns unstructured patient language into actionable, structured data.
-
-🚨 Red Flag Detection	Automatically highlights urgent warning signs (e.g., "shosh hoye jacche" - severe dehydration) for immediate attention.	Prioritizes critical cases and alerts clinicians.
-
-💊 AI-Powered OTC Suggestions	Leverages OpenAI GPT to generate safe, general-purpose over-the-counter medicine advice. Clearly labels it as non-prescriptive.	Provides educational context for common, minor ailments.
-
-🔄 Doctor-Patient Translation	Converts complex English doctor instructions back into simple, understandable Bengali for the patient.	Closes the communication loop and improves health literacy.
-
-
-## Tech Stack
-Backend API: Python + FastAPI (High-performance, async-ready)
-Frontend UI: React (with TypeScript for type safety)
-AI & NLP: OpenAI GPT API + Custom Bengali regex/lexicon mappers
-
-Authentication: (Optional) JWT / OAuth2
-
-⚡ Quick Start
-Prerequisites
-Python 3.9+
-Node.js & npm
-An OpenAI API key
-
-1. Clone & Setup :
-   git clone https://github.com/<your-username>/cross-language-healthbot.git
-   cd cross-language-healthbot
-   
-3. Backend Setup :
-   cd backend
-   pip install -r requirements.txt
-   # Set your API Key (Unix/macOS)
-   export OPENAI_API_KEY="your_key_here"
-   # For Windows (Command Prompt)
-   setx OPENAI_API_KEY "your_key_here"
-   # Start the server
-    uvicorn app.main:app --reload --port 8000
-API docs will be live at: http://localhost:8000/docs
-
-3. Frontend Setup :
-   cd ../frontend
-   npm install
-   npm start
-The app will be live at: http://localhost:3000
-
-📖 How It Works: The User Journey
-1. Patient Input: A user describes their symptoms in natural Bengali:
-   "আমার পেটে খুব ব্যথা, বমি বমি লাগছে, এবং জ্বর হয়েছে গতকাল থেকে।" 
-2. Structuring & Analysis: Our backend parses this into:
-{
-  "symptoms": ["abdominal pain", "nausea", "fever"],
-  "severity": "severe",
-  "duration": "1 day",
-  "red_flags": []
-}
-
-3. AI Suggestion: GPT suggests general OTC advice (e.g., hydration, rest, common antacids) with clear disclaimers.
-4. Doctor's Turn: A doctor reviews the structured data, makes a diagnosis, and types advice in English.
-5. Closing the Loop: The doctor's advice is translated back into simple Bengali for the patient to understand.
-
-🧪 Example API Flow
-Endpoint: POST /api/parse-symptoms
-Request (Bengali Text): 
-{
-  "text": "মাথা ব্যাথা এবং সারা শরীরে জ্বর আছে।"
-}
-Response (Structured JSON):
-{
-  "structured_data": {
-    "symptoms": ["headache", "fever"],
-    "severity": "mild",
-    "duration": "unknown",
-    "red_flags": []
-  },
-  "ai_advice": "For general headache and fever, rest and hydration are recommended. Over-the-counter pain relievers like paracetamol may help. Consult a doctor if symptoms worsen.",
-  "translated_advice": "মাথাব্যথা এবং জ্বরের জন্য বিশ্রাম এবং জলখাবার সুপারিশ করা হয়। প্যারাসিটামলের মতো ওভার-দ্য-কাউন্টার ব্যথানাশক সাহায্য করতে পারে। লক্ষণগুলি খারাপ হলে একজন ডাক্তারের সাথে পরামর্শ করুন।"
-}
-
-📂 Project Structure :
-cross-language-healthbot/
-├── 📁 backend/
-│   ├── app/
-│   │   ├── main.py          # FastAPI app root
-│   │   ├── models.py        # Pydantic models
-│   │   ├── nlpparser.py     # Core Bengali NLP logic
-│   │   └── ai_helper.py     # OpenAI GPT integration
-│   ├── requirements.txt
-│   └── README.md
-└── 📁 frontend/
-    ├── src/
-    │   ├── components/      # React components
-    │   └── App.tsx
-    ├── package.json
-    └── README.md
-
-🤝 Contributing
-We welcome contributions! Please feel free to submit issues, fork the repository, and create pull requests. Let's make healthcare more accessible together.
-1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
-
-**📜 License
-Distributed under the MIT License. See LICENSE file for more information.
-
-👨‍💻 Author
-Srizoni Maity
-Baishakhi Sing
-GitHub: [https://github.com/srizoni-maity]
-LinkedIn: [https://www.linkedin.com/in/srizoni-maity-012235356]**
-
-If this project inspires you, give it a ⭐!
-
+    <footer>
+        <p>Distributed under the MIT License. See LICENSE file for more information.</p>
+        <p>© 2023 Bhasha-Arogya | Created by Srizoni Maity</p>
+    </footer>
+</body>
+</html>
